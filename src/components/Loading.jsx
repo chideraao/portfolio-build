@@ -1,12 +1,13 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import { animated, useTransition } from "react-spring";
 
 function Loading() {
 	const [items, setItems] = useState([
-		{ id: 0, text: "Loadin'" },
-		{ id: 1, text: "i am a boy'" },
-		{ id: 2, text: "Lokuhfdfnmadin'" },
-		{ id: 3, text: "site din' din' din' loadin'" },
+		{ id: 0, text: "Loadin'." },
+		{ id: 1, text: "Loadin'.." },
+		{ id: 2, text: "Loadin'..." },
+		{ id: 3, text: "site loadin' din' din' loadin'" },
 	]);
 	const [index, setIndex] = useState(0);
 
@@ -15,19 +16,19 @@ function Loading() {
 			setIndex((state) => (state + 1) % items.length);
 		}, 4000);
 		return () => clearInterval(interval);
-	}, []);
+	}, [items]);
 
-	const transitions = useTransition(items[index], (item) => item.id, {
-		from: { /**position: "absolute"*/ opacity: 1 },
+	const transitions = useTransition(items[index], items.id, {
+		from: { opacity: 0 },
 		enter: { opacity: 1 },
 		leave: { opacity: 0 },
-		config: { duration: 7000 },
-		// config: { tension: 220, friction: 120 },
+		trail: 0,
+		config: { tension: 2000, friction: 10, duration: 7000 },
 	});
 	return (
-		<div>
+		<div className="container center-div">
 			{transitions.map(({ item, props, key }) => (
-				<animated.div key={key} style={{ ...props, position: "absolute" }}>
+				<animated.div key={key} style={{ ...props }}>
 					<h1>{item.text}</h1>
 				</animated.div>
 			))}
