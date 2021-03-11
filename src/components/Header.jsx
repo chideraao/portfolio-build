@@ -5,7 +5,9 @@ function Header() {
 	return (
 		<div className="container flex">
 			<div className="">
-				<h2>Dhera.dev</h2>
+				<Link to="/">
+					<h2>Dhera</h2>
+				</Link>
 			</div>
 			<div className="">
 				<ul className="flex">

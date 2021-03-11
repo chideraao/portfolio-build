@@ -69,6 +69,10 @@ img {
 	padding: 0 40px;
 }
 
+.header h2 {
+	font-style: italic;
+}
+
 .header > .flex {
 	padding-top: 1rem;
 	justify-content: space-between;
