@@ -1,12 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { ReactComponent as Logo } from "../assets/logo.svg";
 
 function Header() {
 	return (
 		<div className="container flex">
 			<div className="">
 				<Link to="/">
-					<h2>Dhera</h2>
+					<span>
+						<Logo />
+					</span>
 				</Link>
 			</div>
 			<div className="">
