@@ -7,7 +7,7 @@ function Loading() {
 		{ id: 0, text: "Loadin'." },
 		{ id: 1, text: "Loadin'.." },
 		{ id: 2, text: "Loadin'..." },
-		{ id: 3, text: "site loadin' din' din' loadin'" },
+		{ id: 3, text: "loadin' din' din' loadin'" },
 	]);
 	const [index, setIndex] = useState(0);
 
