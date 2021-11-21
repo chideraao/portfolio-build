@@ -1,6 +1,9 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
  "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<svg>
+  <foreignObject id="G" width="134" height="60">
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="100.000000pt" height="100.000000pt" viewBox="0 0 1526.000000 626.000000"
  preserveAspectRatio="xMidYMid meet" style='padding-bottom: 4rem;'>
@@ -46,4 +49,7 @@ c182 -58 267 -163 269 -330 1 -103 -14 -160 -59 -221 -87 -120 -234 -168 -512
 -230 4 -10 -38 -13 -206 -13 -116 0 -211 4 -211 9 0 36 192 451 209 451 5 0
 52 -98 106 -217z"/>
 </g>
+</svg>
+</foreignObject>
+
 </svg>
